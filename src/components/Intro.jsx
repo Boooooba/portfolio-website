@@ -74,7 +74,7 @@ export default function Intro() {
           </React.Fragment>
           <div className="intro-img-cont">
             <img
-              src="../..//photos/dev.png"
+              src="../src/photos/dev.png"
               alt="cartoon dev"
               className="intro-img"
             />
