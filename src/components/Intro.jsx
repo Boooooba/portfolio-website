@@ -135,7 +135,7 @@ export default function Intro() {
               </span>
             </div>
           </div>
-          <a target='_blank' href="https://drive.google.com/file/d/1YX2tlTp3MOA7KNOTVYBXZ2IZADFpEnlp/view?usp=sharing" className="cv-link">See my Resume!</a>
+          <a target='_blank' href="https://drive.google.com/file/d/12ZX04gTQOpuIBIubM3C5Dn5thYHv22DM/view?usp=sharing" className="cv-link">See my Resume!</a>
         </div>
       </div>
     </div>
