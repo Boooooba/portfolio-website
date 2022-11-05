@@ -811,6 +811,12 @@ button{
 }
 
 @media screen and (min-width:1366px){
+
+  .intro-right-bg{
+    height: 80%;
+    bottom: 30%;
+  }
+
   .form-thanks{
     display: block;
     padding: .1em .4em;
@@ -827,7 +833,8 @@ button{
 
 @media screen and (min-width:1920px ){
   .intro-right-bg{
-    bottom: 24%; 
+    bottom: 55%; 
+    height: 60%;
   }
 
   .project-src-code{
@@ -841,11 +848,93 @@ button{
 
 @media screen and (min-width:1680px){
   .project-src-code{
-    margin-left: 13em;
+    /* margin-left: 13em; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
   }
 }
 
 /* height media */
+
+@media (max-height: 1760px){
+  .intro-right-bg{
+    bottom: 69%;
+    height: 50%;
+  }
+}
+
+@media (max-height: 1590px){
+  .intro-right-bg{
+    bottom: 64%;
+    height: 50%;
+  }
+
+  .img-a-wrapper{
+    margin-bottom: 11em;
+    height: 60%;
+  }
+}
+
+@media (max-height: 1400px){
+  .intro-right-bg{
+    bottom: 60%;
+    height: 75%;
+  }
+
+  .img-a-wrapper{
+    margin-bottom: 7em;
+  }
+}
+
+@media (max-height: 1250px){
+  .intro-right-bg{
+    bottom: 55%;
+    height: 75%;
+  }
+  .img-a-wrapper{
+    margin-bottom: 6em;
+  }
+}
+
+@media (max-height: 1145px){
+  .intro-right-bg{
+    bottom: 50%;
+    height: 75%;
+  }
+
+  .img-a-wrapper{
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-height: 1092px){
+  .img-a-wrapper{
+    margin-bottom: 10em;
+  }
+}
+
+@media (max-height: 930px){
+  .intro-right-bg{
+    bottom: 40%;
+  }
+
+  .img-a-wrapper{
+    margin-bottom: 7em;
+  }
+
+}
+
+@media (max-height: 850px){
+  .intro-right-bg{
+    bottom: 35%;
+  }
+
+  .img-a-wrapper{
+    margin-bottom: 7em;
+  }
+}
 
 @media (max-height: 750px){
   .intro-right-bg{
@@ -854,11 +943,19 @@ button{
     bottom: 25%;
     right: 0;
   }
+
+  .img-a-wrapper{
+    margin-bottom: 7em;
+  }
 }
 
 @media (max-height: 650px){
   .intro-right-bg{
     bottom: 15%;
+  }
+
+  .img-a-wrapper{
+    margin-bottom: 5em;
   }
 }
 
@@ -866,5 +963,8 @@ button{
   .intro-right-bg{
     display: none;
     margin: 0;
+  }
+  .img-a-wrapper{
+    margin-bottom: 5em;
   }
 }
