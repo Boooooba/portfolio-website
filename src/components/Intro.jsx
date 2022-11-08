@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from 'react-scroll'
 import {
   faGithub,
@@ -9,13 +8,17 @@ import {
   faCss3,
   faGitAlt,
   faJs,
-  faVuejs,
-  faJsSquare,
 } from "@fortawesome/free-brands-svg-icons";
-
+import useElementOnScreen from "./useElementOnScreen";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Intro() {
+
+  const [containerRef, isVisible] = useElementOnScreen({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  });
 
   return (
     <div className="container">
@@ -79,8 +82,8 @@ export default function Intro() {
               className="intro-img"
             />
           </div>
-          <div className="tech">
-            <div className="tech-text-wrapper">
+          <div ref={containerRef} className='tech'>
+            <div className={`tech-text-wrapper ${isVisible? 'show' : 'hidden'}`}>
               <span className="name-wrapper">
                 <a href="https://reactjs.org" target="_blank" className='icon-a'>
                   <FontAwesomeIcon icon={faReact} className="stack" />
